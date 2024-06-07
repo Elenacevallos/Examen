@@ -1,9 +1,93 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ResultActivity">
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context="ResultActivity">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <TextView
+        android:id="@+id/textViewnom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:layout_marginBottom="16dp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="alt"
+        android:layout_marginTop="8dp" />
+
+    <TextView
+        android:id="@+id/textViewalt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:layout_marginBottom="16dp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="bas"
+        android:layout_marginTop="8dp" />
+
+    <TextView
+        android:id="@+id/textViewbas"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:layout_marginBottom="16dp" />
+
+    <RadioGroup
+        android:id="@+id/radioGroupOpe"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RadioButton
+            android:id="@+id/radioButtonaarea"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="area" />
+
+        <RadioButton
+            android:id="@+id/radioButtonper"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="per"
+            android:layout_marginBottom="8dp" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/buttoncal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="cal" />
+
+    <Button
+        android:id="@+id/buttonlim"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="lim"
+        android:layout_marginTop="16dp" />
+
+    <TextView
+        android:id="@+id/textViewres"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text=""
+        android:textSize="18sp" />
+
+    <Button
+        android:id="@+id/buttonreg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="reg"
+        android:layout_marginTop="16dp" />
+
+</LinearLayout>

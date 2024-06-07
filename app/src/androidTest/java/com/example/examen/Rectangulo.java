@@ -1,19 +1,19 @@
 package com.example.examen;
 
 public class Rectangulo {
-    private float base;
-    private float altura;
+    private float bas;
+    private float alt;
 
-    public Rectangulo(float base, float altura) {
-        this.base = base;
-        this.altura = altura;
+    public Rectangulo(float bas, float alt) {
+        this.bas = bas;
+        this.alt = alt;
     }
 
     public float calcularArea() {
-        return base * altura;
+        return bas * alt;
     }
 
     public float calcularPerimetro() {
-        return 2 * (base + altura);
+        return 2 * (bas + alt);
     }
 }
